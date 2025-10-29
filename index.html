@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "./src/css/estilo.css">
     <title>Heros shop</title>
 </head>
 
@@ -19,7 +20,7 @@
                 <li class="navegar"><a href="#">Home</a> </li>
                 <li class="navegar"><a href="#">Sobre</a> </li>
                 <li class="navegar"><a href="#">Fantasias</a> </li>
-                <li class="navegar"><a href="#">Login</a> </li>
+                <li class="navegar"><a href="#" id="login-link">Login</a> </li>
             </ul>
         </nav>
     </header>
@@ -30,12 +31,12 @@
             <div class="banner-conteudo">
                 <h1 class="banner-titulo">Titulo</h1>
                 <p class="banner-descricao">descrição do filme</p>
-                <button class="comprar">Comprar</button>
+                <button class="banner-btn">Comprar</button>
             </div>
         </section>
         <div>
             <h1>Compre aqui a fantasia dos seus sonhos!</h1>
-            <p>Bem-vindo à HeroShop, o lugar onde a imaginação ganha vida!
+            <p>Bem-vindo à <span class="estilo">HeroShop</span>, o lugar onde a imaginação ganha vida!
                 Somos apaixonados pelo universo da Marvel e criamos este espaço para que fãs de todas as idades possam
                 se transformar em seus heróis favoritos. Aqui, você encontra fantasias detalhadas, confortáveis e de
                 alta qualidade, inspiradas nos maiores ícones dos quadrinhos e do cinema — de Homem de Ferro e
@@ -45,7 +46,7 @@
                 cada compra. Seja para festas, eventos, coleções ou apenas para viver um dia como seu herói favorito, a
                 HeroShop está pronta para vestir sua coragem.
 
-                Vista-se como um herói. Salve o dia com estilo!</p>
+                Vista-se como um <span class="estilo">herói</span>. Salve o dia com estilo!</p>
         </div>
 
         <div class="card">
@@ -95,5 +96,6 @@
         <p>&copy; 2025 - Heros Costume</p>
     </footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./src/js/script.js"></script>
 </html>
