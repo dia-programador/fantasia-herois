@@ -64,10 +64,10 @@ const loginForm = async () => {
   const { value: formValues } = await Swal.fire({
     title: 'Login Form',
     html: `
-      <input type="text" id="username" class="swal2-input" placeholder="Username">
-      <input type="password" id="password" class="swal2-input" placeholder="Password">
+      <input type="text" id="username" class="swal2-input" placeholder="Apelido">
+      <input type="password" id="password" class="swal2-input" placeholder="Senha">
     `,
-    confirmButtonText: 'Sign in',
+    confirmButtonText: 'Logar',
     focusConfirm: false,
     didOpen: () => {
       const popup = Swal.getPopup();
@@ -92,6 +92,7 @@ const loginForm = async () => {
       title: `Bem-vindo, ${formValues.username}!`,
       text: 'Login bem-sucedido.',
       icon: 'success',
+    //   aaaaa
     });
   }
 };
@@ -109,5 +110,5 @@ document.addEventListener('DOMContentLoaded', () => {
       loginForm();
     });
   }
-})
+});
 
