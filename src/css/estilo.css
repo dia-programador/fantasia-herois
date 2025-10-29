@@ -1,0 +1,431 @@
+/* Estilo básico para o corpo da página */
+body { 
+/* erro 7, body não possui classe, e nem mesmo é uma */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Estilo para o título principal */
+h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Estilo para o campo de entrada e o label */
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 15px;
+    width: 250px; /* Ajuste para o seu tamanho original */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os botões */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#btnAdicionar {
+    background-color: #28a745; /* Verde */
+    color: white;
+}
+#btnAdicionar:hover {
+    background-color: #218838;
+}
+
+#btnRemover {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+}
+
+#btnRemover:hover {
+    background-color: #c82333;
+}
+/* erro 8, btnadicionar (hover tbm) são IDs, não classes */
+
+/* Estilo para a área onde as tarefas serão listadas */
+#lista {
+    /* Lista é um id */
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px dashed #007bff;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    min-height: 50px; /* Para mostrar a área mesmo que vazia */
+}
+
+
+
+
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:#000;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+.logo{
+    width:100px;
+    height:70px;
+}
+.cabecalho{
+    background:#000;
+    padding:20px;
+}
+.cabecalho-nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho-menu{
+    /* sem bolinhas */
+    list-style:none;
+    /* um do lado do outro */
+    display:flex;
+}
+.cabecalho-menu li{
+    margin-left:20px;
+}
+.cabecalho-menu a{
+    color:white;
+    text-decoration:none;
+}
+.banner{
+    background-image: url(../assets/Game6.jpg);
+    background-size: cover;
+    height:500px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+    transition: background-image 1s ease-in-out;
+}
+.banner-overlay{
+    content:"" ;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index: 1; 
+}
+/* dois pontos são pseudo elementos, executa uma ação antes */
+.banner::before{
+    content:"" ;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    z-index: 1; 
+    /* garante que outras coisas fiquem acima de tal item, quanto maior o número, vai ficando acima */
+}
+.banner-conteudo{
+    width:600px;
+    position:relative;
+    z-index:2;
+}
+.banner-titulo{
+    font-size:3em;
+    margin-bottom: 20px;
+}
+.banner-descricao{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+.banner-btn{
+    background:#e50914;
+    padding: 10px 30px;
+    border-radius:10px;
+    color:#fff;
+    border:none;
+    margin:0 10px;
+    cursor:pointer;
+}
+.banner-btn:hover{
+    box-shadow:5px 5px 5px black;
+    transition: 0.5s;
+    /* transform: translateX(5px); */
+    /* transform:rotate(360deg); */
+    transform: scale(110%);
+}
+.sessao-filmes{
+    padding:20px;
+}
+.filme-titulo{
+    font-size:2em;
+    margin-bottom:20px;
+}
+.carrossel{
+    position:relative;
+    overflow:hidden;
+}
+.carrossel img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:5px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.3);
+    transition:transform 0.3s ease-in-out;
+}
+.carrossel-lista{
+    display:flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carrossel-item{
+    min-width:200px;
+    padding:10px;
+}
+.btn-carrossel{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background:rgba(0,0,0,0.5);
+    border:none;
+    padding:10px;
+    cursor:pointer;
+}
+.btn-anterior{
+left:0;
+}
+.btn-proximo{
+    right:0;
+}
+footer{
+ background:black;
+ padding:20px;
+ text-align:center;
+}
+
+#perfil{
+    width: 100%;
+    min-height: 555px; /* Usado min-height para flexibilidade*/
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background:#222222;
+    padding:20px 0; /* Adicionado para dar um respiro*/
+}
+.perfis-container{
+    width: 90%;
+    max-width: 900px; /* Definido um máximo para evitar quebra em telas muito grandes */
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    justify-content: center;
+    gap: 20px;
+}
+.perfil-card{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+}
+.perfil-card h3{
+    color:#fff;
+    font-size:20px;
+    margin-top:10px;
+}
+.perfil-img{
+    width:120px;
+    height:120px;
+    border:2px solid #fff;
+    border-radius:100%;
+    object-fit: cover; /* Recorta a imagem para preencher o contêiner sem distorcê-la */
+}
+.perfil-img-link{
+    display:block;
+    width:120px;
+    height:120px;
+    overflow:hidden;
+    border-radius: 50%;
+}
+
+/* ## seções de conteúdo */
+#titulo {
+    background:#1A1D1F;
+    width:100%;
+    height:200px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:70px;
+}
+
+#titulo img{
+    width:400px;
+    height:300px;
+    margin-top:-45px;
+}
+
+#historia{
+    width: 100%;
+    min-height:600px;
+    background: #808080;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+    padding: 20px 0;
+}
+
+#texto-historia h1{
+    color:rgb(37, 37, 116);
+    font-size:40px;
+    margin-bottom:30px;
+    font-family:'courier new', courier, monospace;
+}
+
+#texto-historia p{
+    font-size: 17px;
+    color:#1a1d1f;
+}
+
+#imagens-historia img{
+    width:600px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.historia-personagem{
+    width:100%;
+    min-height:555px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    background: #1a1d1f;
+    padding:20px 0;
+}
+
+.historia-personagem p{
+    color: #fff;
+    font-size:17px;
+    text-align:center;
+}
+
+.historia-personagem h3{
+    color:#4c8755;
+    margin-top:20px;
+    font-family: Verdana, tahoma, sans-serif;
+    text-align:center;
+}
+
+.historia-personagem img{
+    width:230px;
+    height:290px;
+}
+
+.imagem-personagem, .imagem-personagem2{
+    width:230px;
+    height:290px;
+    border:2px solid #ccc;
+}
+
+.texto-personagem{
+    width: 500px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+
+#melhores-momentos{
+    width: 100%;
+    background: #1a1d1f;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding:40px 0;
+}
+
+#melhores-momentos h1{
+    color: rgb(197,6, 6);
+    font-size: 32px;
+    font-family: 'courier new', courier, monospace;
+    margin-bottom: 30px;
+}
+
+.videos-momentos-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.videos-momentos {
+    width:300px;
+    height:200px;
+    margin: 10px;
+}
+
+.videos-momentos video{
+    width:100%;
+    height:100%;
+}
+
+#episodio-completo{
+    width: 100%;
+    height: 150px;
+    background: #143440;
+    display: grid;
+    place-items: center;
+}
+
+#episodio-completo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#episodio-completo a:hover{
+    color:yellowgreen;
+    background:#fff;
+    border-color:yellowgreen;
+    text-decoration:none;
+}
+
+
+
+
+

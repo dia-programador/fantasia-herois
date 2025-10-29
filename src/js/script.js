@@ -88,13 +88,16 @@ const loginForm = async () => {
   });
 
   if (formValues) {
-    Swal.fire({
-      title: `Bem-vindo, ${formValues.username}!`,
-      text: 'Login bem-sucedido.',
-      icon: 'success',
-    //   aaaaa
-    });
-  }
+  Swal.fire({
+    title: `Bem-vindo, ${formValues.username}!`,
+    text: 'Login bem-sucedido.',
+    icon: 'success',
+    confirmButtonText: 'Continuar',
+  }).then(() => {
+    // redireciona para outra página após o clique em "Continuar"
+    window.location.href = "tarefa.html"; 
+  });
+}
 };
 
 // Selecione o link de login
