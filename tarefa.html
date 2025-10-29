@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/estilo.css"> <!-- arrumando "stlsheet, erro 1 -->
+  <title>Lista Tarefas</title>
+</head>  <!-- erro 2, header não fecha head, erro de sintaxe -->
+
+<body>
+  <h1>LISTA DE TAREFAS</h1> <!-- erro 3, erro de sintaxe, o correto seria h1, não l1 -->
+  <p><label for="task">TAREFA:</label>
+    <input type="text" id="task" size="25px"> <!-- erro 4, "imput" se escreve com "n" no lugar de "m" -->
+  </p>
+  <div>
+    <button id="btnAdicionar" onclick="adcionaTarefa()">Adicionar Tarefa</button> 
+      <!-- erro 5, "onclic" possui "k" após o último "c" -->
+    <button id="btnRemover" onclick="removeTarefa()">Remover Tarefa</button>
+
+    <!-- erro 9, "buttom" se escreve com "n", não "m" -->
+  </div>
+
+
+  <p id="lista"></p>
+
+
+
+  <script src="./src/js/script.js"></script> <!-- erro 6, "src" estava escrito errado "scr" -->
+</body>
+
+</html>
