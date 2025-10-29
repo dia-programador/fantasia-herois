@@ -1,4 +1,7 @@
 /* Estilo básico para o corpo da página */
+html{
+    scroll-behavior: smooth;
+}
 body { 
 /* erro 7, body não possui classe, e nem mesmo é uma */
     font-family: Arial, sans-serif;
