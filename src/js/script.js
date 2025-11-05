@@ -1,56 +1,53 @@
-//ARRAY DE OBJETOS COM AS IMAGENS E INFORMAÇÕES DO BANNER
-const bannerItems =[
+/// ARRAY DE OBJETOS COM AS IMAGENS E INFORMAÇÕES DO BANNER
+const bannerItems = [
 {
-    imagem:"./assets/slide1.jpg",
-    titulo: "TItulo do filme",
-    descricao: "Filme 1"
+    image: "./assets/img/slide1.png",
+    titulo: "O Jogo da Imitação",
+    descricao: "Um grupoamigos descobrem dados mágicos que não são o que parecem" 
 },
 {
-    imagem:"./assets/slide2.jpg",
-    titulo: "TItulo do filme 2",
-    descricao: "Filme 2"
+    image: "./assets/img/slide2.png",
+    titulo: "O Cassino - A Casa Sempre Ganha",
+    descricao: "Um documentário mostrando os perigos e riscos dos cassinos" 
 },
-
 {
-    imagem:"./assets/slide3.jpg",
-    titulo: "TItulo do filme 3",
-    descricao: "Filme 3"
+    image: "./assets/img/slide3.png",
+    titulo: "Fliperamas",
+    descricao: "A história de como os fliperamas mudaram o mundo" 
 }
-
 ];
 
-//DECLARANDO AS VARIAVEIS E ELEMENTOS COM DOM(DOCUMENT OBJECT MODEL)
-let i= 0;// inicio da contagem das imagens
-const tempo = 5000; // tempo em milissegundos
+// DECLARANDO AS VARIÁVEIS E ELEMENTOS COM DOM (DOCUMENT OBJECT MODEL)
+const tempo = 5000; // Tempo em milissegundos
 const elementoBanner = document.querySelector(".banner");
 const elementoTitulo = document.querySelector(".banner-titulo");
 const elementoDescricao = document.querySelector(".banner-descricao");
-
+let i = 0; // Início da contagem das imagens
 
 // FUNÇÃO PARA O SLIDESHOW
 
 function slideShow(){
-    // ALTERA A IMAEM DE FUNDO DO BANNER
-    // ``- template strings ou string literais forma de concatenar
-    elementoBanner.style.backgroundImage = `url(${bannerItems[i].imagem})`;
-    // ALTERA O TITULO DO BANNER
-    elementoTitulo.textContent =bannerItems[i].titulo;
-     // ALTERA O DESCRIÇÃO DO BANNER
+    //  ALTERA A IMAGEM DE FUNDO DO BANNER
+    // `` - Template strings ou strings literais forma de concatenar
+    elementoBanner.style.backgroundImage = `url(${bannerItems[i].image})`;
+    // ALTERA O TÍTULO DO BANNER
+    elementoTitulo.textContent = bannerItems[i].titulo;
+    // ALTERA A DESCRIÇÃO
     elementoDescricao.textContent = bannerItems[i].descricao;
 
-    // INCREMENTA O INDECE (i) e reinicia quando chegar no final do array
-
-    // se o i for maior que a quantidade de imagems volta para o inicio
+    // INCREMENTA O ÍNDICE (i) E REINICIA QUANDO CHEGAR NO FINAL DO ARRAY
+    
+    // se o i for maior que a quantidade de imagens, volta pro início
     i++;
-    if( i >= bannerItems.length){
-        i =0;
-    }
-    // chama a função noamente após o tempo definido
+    if (i >= bannerItems.length){
+        i = 0;
+    };
+    // CHAMA A FUNÇÃO NOVAMENTE APÓS O TEMPO DEFINIDO
     setTimeout(slideShow, tempo);
-
 }
-// inicia o slideShow da função
-slideShow()
+
+// INICIA O SLIDESHOW DA FUNÇÃO
+slideShow();
 
 
 
