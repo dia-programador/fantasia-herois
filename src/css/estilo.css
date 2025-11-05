@@ -276,6 +276,16 @@ h3{
 
 }
 
+#wolverine img{
+    width:250px;
+    height:250px;
+    position: absolute;
+    z-index: 9999;
+    bottom: 130px;
+    Right: 20px;
+    display: block;
+}
+
 footer{
  background:black;
  padding:20px;
