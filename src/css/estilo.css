@@ -33,12 +33,34 @@ body::before {
     z-index: -1;
 }
 
-.logo{
-    width:100px;
-    height:70px;
-    
-    justify-content: left;
+#logo img{
+    width:250px;
+    height:250px;
+    position: absolute;
+    z-index: 9999;
+    top: 100px;
+    left: 20px;
 }
+
+.spider-hover{
+    display: inline-block;
+    transform-origin: top center;
+    animation: swingSpider 2s infinite;
+}
+
+@keyframes swing {
+  20% { transform: rotate(10deg); }
+  40% { transform: rotate(-10deg); }
+  60% { transform: rotate(5deg); }
+  80% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.spider-hover:hover {
+  animation: swing 2.0s infinite;
+}
+
+
 .cabecalho{
     background:#000;
     padding:40px;
@@ -129,7 +151,7 @@ body::before {
     transition: 0.5s;
     /* transform: translateX(5px); */
     /* transform:rotate(360deg); */
-    transform: scale(110%);
+    transform: scale(150%);
 }
 .sessao-filmes{
     padding:20px;
