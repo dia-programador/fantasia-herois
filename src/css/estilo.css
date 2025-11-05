@@ -10,7 +10,7 @@ body{
     color: #fff;
      margin: 0;
     /* adicionando o gif como fundo */
-    background: url('../assets/fundo.gif') no-repeat center center fixed;
+    background: url('../assets/spider-man.gif') no-repeat center center fixed;
     /* cobrir toda a tela */
     background-size: cover;
     min-height: 100vh;
@@ -21,15 +21,25 @@ body{
     flex-direction: column;
     /* esconder barra horizontal */
     overflow-x: hidden;
-
 }
+body::before {
+    content: "";
+    position: fixed; /* FIXO, não absoluto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6); /* ajuste a opacidade aqui */
+    z-index: -1;
+}
+
 .logo{
     width:100px;
     height:70px;
 }
 .cabecalho{
     background:#000;
-    padding:20px;
+    padding:40px;
 }
 .cabecalho-nav{
     display:flex;
@@ -68,7 +78,7 @@ body{
     top:0;
     left:0;
     width:100%;
-    height:100%;
+    height:130%;
     background:rgba(0,0,0,0.5);
     z-index: 1; 
 }
@@ -79,13 +89,19 @@ body{
     top:0;
     left:0;
     width:100%;
-    height:100%;
+    height:130%;
     background:rgba(0,0,0,0.5);
     z-index: 1; 
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ff0000;
+    border-top: 2px solid #ff0000;
+    border-left: 2px solid #ff0000;
+    border-right: 2px solid #ff0000;
+    padding-bottom: 0px;
     /* garante que outras coisas fiquem acima de tal item, quanto maior o número, vai ficando acima */
 }
 .banner-conteudo{
-    width:600px;
+    width:800px;
     position:relative;
     z-index:2;
 }
