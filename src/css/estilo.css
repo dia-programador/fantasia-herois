@@ -79,7 +79,7 @@ body::before {
     display:flex;
 }
 .cabecalho-menu li{
-    margin-left:20px;
+    margin-left:40px;
 }
 .cabecalho-menu a{
     color:white;
@@ -87,6 +87,12 @@ body::before {
     font-size: 30px;
     margin-right: 20px;
 }
+
+.navegar:hover{
+    transition: 0.5s;
+    transform: scale(130%);
+}
+
 .banner{
     background-image: url(../assets/slide1.jpg);
     background-size: cover;
@@ -198,19 +204,27 @@ body::before {
 .frase{
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 300px;
+    font-size: 70px;
 }
 .parag{
     justify-content:flex-start;
     text-align: center;
     margin: 100px;
     font-size: 20px;
-    
-    margin-bottom: 20px;
     border-bottom: 2px solid #ff0000;
+    border-top: 2px solid #ff0000;
+    border-left: 2px solid #ff0000;
+    border-right: 2px solid #ff0000;
     padding-bottom: 50px;
-
+    padding-top:50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10%;
+    
 }
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -220,6 +234,11 @@ h1{
     text-align: center;
     display:flex;
     justify-content: center;
+}
+.FANTASIA{
+    margin-bottom:30px;
+    font-size: 40px;
+    
 }
 
 h3{
