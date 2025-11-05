@@ -36,6 +36,8 @@ body::before {
 .logo{
     width:100px;
     height:70px;
+    
+    justify-content: left;
 }
 .cabecalho{
     background:#000;
