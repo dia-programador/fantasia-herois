@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 20px;
     margin: 0;
 }
@@ -223,12 +224,60 @@ body{
     padding:10px;
     cursor:pointer;
 }
-.btn-anterior{
-left:0;
+
+.frase{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
 }
-.btn-proximo{
-    right:0;
+.parag{
+    justify-content:flex-start;
+    text-align: center;
+    margin: 100px;
+    font-size: 20px;
+
 }
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h3{
+    color: black;
+}
+.desc{
+    color:black;
+    padding: 10px;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #1f2937;
+    background: white;
+    border-radius: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.preco {
+    font-weight: 700;
+    margin-top: 30px;
+    color: #1f2937;
+    text-align: center;
+    font-size: 1.7em;
+
+}
+
 footer{
  background:black;
  padding:20px;
@@ -294,142 +343,3 @@ footer{
     height:300px;
     margin-top:-45px;
 }
-
-#historia{
-    width: 100%;
-    min-height:600px;
-    background: #808080;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-around;
-    align-items:center;
-    padding: 20px 0;
-}
-
-#texto-historia h1{
-    color:rgb(37, 37, 116);
-    font-size:40px;
-    margin-bottom:30px;
-    font-family:'courier new', courier, monospace;
-}
-
-#texto-historia p{
-    font-size: 17px;
-    color:#1a1d1f;
-}
-
-#imagens-historia img{
-    width:600px;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.historia-personagem{
-    width:100%;
-    min-height:555px;
-    display:flex;
-    flex-direction:row;
-    justify-content: space-around;
-    align-items: center;
-    background: #1a1d1f;
-    padding:20px 0;
-}
-
-.historia-personagem p{
-    color: #fff;
-    font-size:17px;
-    text-align:center;
-}
-
-.historia-personagem h3{
-    color:#4c8755;
-    margin-top:20px;
-    font-family: Verdana, tahoma, sans-serif;
-    text-align:center;
-}
-
-.historia-personagem img{
-    width:230px;
-    height:290px;
-}
-
-.imagem-personagem, .imagem-personagem2{
-    width:230px;
-    height:290px;
-    border:2px solid #ccc;
-}
-
-.texto-personagem{
-    width: 500px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content: center;
-    text-align: center;
-}
-
-#melhores-momentos{
-    width: 100%;
-    background: #1a1d1f;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    padding:40px 0;
-}
-
-#melhores-momentos h1{
-    color: rgb(197,6, 6);
-    font-size: 32px;
-    font-family: 'courier new', courier, monospace;
-    margin-bottom: 30px;
-}
-
-.videos-momentos-container{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.videos-momentos {
-    width:300px;
-    height:200px;
-    margin: 10px;
-}
-
-.videos-momentos video{
-    width:100%;
-    height:100%;
-}
-
-#episodio-completo{
-    width: 100%;
-    height: 150px;
-    background: #143440;
-    display: grid;
-    place-items: center;
-}
-
-#episodio-completo a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: .3s;
-}
-
-#episodio-completo a:hover{
-    color:yellowgreen;
-    background:#fff;
-    border-color:yellowgreen;
-    text-decoration:none;
-}
-
-
-
-
-
